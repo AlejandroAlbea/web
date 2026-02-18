@@ -1,197 +1,123 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Alejandro Albea</title>
+    <title>Alejandro Albea | Cybersecurity Student</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="avatar.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
 </head>
 <body>
   <div class="cursor-ball" id="cursorBall"></div>
 
   <header class="site-header">
-    <nav class="navbar container">
-      <a href="#home" class="brand">Alejandro Albea</a>
-      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-        <span class="theme-icon" id="themeIcon">🌙</span>
-      </button>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#experience">Experiencia</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#blog">Blog</a></li>
+    <nav class="navbar container" role="navigation">
+      <a href="#home" class="brand">ALEJANDRO <span class="accent">ALBEA</span></a>
+      
+      <div class="nav-right">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#experience">Trayectoria</a></li>
+        </ul>
 
-        <li><a href="#contact">¿Estás realmente protegid@?</a></li>
-      </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+      </div>
     </nav>
   </header>
 
-  <section id="home" class="hero container">
-  <div class="hero-content">
-    <h1>Hola, soy <span class="accent">Alejandro</span> 👋</h1>
-    <p class="lead">
-      Téncico de IT en Antfor Software. Actualmente estudiando ASIR con perfil de Ciberseguridad.
-    </p>
-    <p class="sublead">
-      Me apasiona la ciberseguridad, la automatización de procesos y el trabajo bien hecho.
-    </p>
-    <div class="hero-actions">
-      <a class="btn primary" href="#projects">Ver proyectos</a>
-      <a class="btn ghost" href="#contact">Contactar</a>
-      <a class="btn ghost" href="https://www.linkedin.com/in/alejandroalbeagall%C3%A9n/" target="_blank" rel="noopener">
-        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
-          style="margin-right:6px;">
-          <path
-            d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.36 8.5h4.26v12H.36v-12zM8.1 8.5h4.08v1.56h.06c.57-1.08 1.98-2.22 4.08-2.22 4.38 0 5.19 2.88 5.19 6.63v6.03h-4.26v-5.34c0-1.27-.02-2.91-1.77-2.91-1.77 0-2.05 1.38-2.05 2.82v5.43H8.1v-12z" />
-        </svg>
-        LinkedIn
-      </a>
-      <a class="btn ghost" href="https://github.com/AlejandroAlbea" target="_blank" rel="noopener">
-        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
-          style="margin-right:6px;">
-          <path
-            d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.84 10.93.57.11.78-.25.78-.55v-2.02c-3.19.7-3.87-1.38-3.87-1.38-.52-1.33-1.28-1.68-1.28-1.68-1.05-.71.08-.7.08-.7 1.16.08 1.78 1.18 1.78 1.18 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.72-1.54-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.19.91-.25 1.88-.37 2.85-.37s1.94.12 2.85.37c2.19-1.5 3.15-1.19 3.15-1.19.62 1.59.23 2.76.11 3.05.74.81 1.18 1.85 1.18 3.11 0 4.42-2.68 5.41-5.24 5.7.41.35.77 1.04.77 2.1v3.11c0 .31.21.67.79.55A10.51 10.51 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5z" />
-        </svg>
-        GitHub
-      </a>
-    </div>
-  </div>
-  <div class="hero-aside">
-    <img src="avatar.jpg" alt="Foto de Alejandro" class="avatar">
-    <ul class="badge-list">
-    </ul>
-  </div>
-</section>
-
-<section id="about" class="section container">
-  <h2>Sobre mí</h2>
-  <div class="about-grid">
-    <p>
-      Soy <strong>Alejandro</strong>, <em>Téncico de IT en Antfor Software</em> en Antfor Software.
-      En paralelo, estudio ASIR con perfil de Ciberseguridad. Me interesan especialmente la seguridad defensiva,
-      la administración de sistemas y el despliegue en cloud.
-    </p>
-    <p>
-      Me definen la curiosidad y las ganas de construir soluciones con impacto.
-      Veo importante ejecutar los proyectos con seriedad y profesionalidad,
-      buscando siempre la mejora continua y el aprendizaje. Lo que más me motiva y llena es ver que los usuarios puedan
-      aprovechar directamente o indirectamente el trabajo que realizo.
-    </p>
-    <p>Téconologias usadas en el día a día</p>
-  </div>
-  </div>
-  <div class="chips">
-    <span class="chip">Linux</span>
-    <span class="chip">Python</span>
-    <span class="chip">Proxmox</span>
-    <span class="chip">Redes</span>
-    <span class="chip">Ciberseguridad</span>
-    <span class="chip">Docker</span>
-    <span class="chip">N8N</span>
-    <span class="chip">Netdata</span>
-    <span class="chip">Firewall</span>
-    <span class="chip">Virtualización</span>
-    <span class="chip">Monitorización</span>
-    <span class="chip">Windows Server</span>
-  </div>
-</section>
-
-<section id="experience" class="section container">
-  <h2>Experiencia laboral</h2>
-  <div class="timeline">
-    <div class="item">
-      <div class="dot"></div>
-      <div class="content">
-        <h3>Antfor Software · Técnico de IT</h3>
-        <p class="meta">2024 - Actualidad</p>
-        <p>Soporte, despliegues, mantenimiento de sistemas y mejora continua con foco en disponibilidad y seguridad.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="education" class="section container">
-  <h2>Experiencia educativa</h2>
-  <div class="timeline">
-    <div class="item">
-      <div class="dot"></div>
-      <div class="content">
-        <h3>SJO · SMR</h3>
-        <p class="meta">2023 - 2025</p>
-        <p class="meta">Modalidad presencial DUAL</p>
-        <p>Diseño, mantenimiento e implementación de sistemas informáticos a pequeña escala y sus redes asociadas.</p>
-      </div>
-    </div>
-    <div class="item">
-      <div class="dot"></div>
-      <div class="content">
-        <h3>iFP · ASIR con perfil de Ciberseguridad</h3>
-        <p class="meta">2025 - Actualidad</p>
-        <p class="meta">Modalidad online</p>
-        <p>Administración de sistemas, redes, hardening, scripting y fundamentos de blue team.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="projects" class="section container">
-  <div class="section-head">
-    <h2>Proyectos</h2>
-    <div class="search">
-      <input id="projectSearch" type="search" placeholder="Buscar por nombre o etiqueta...">
-    </div>
-  </div>
-
-  <div id="projectsGrid" class="grid projects-grid">
-    <!-- Renderizado por JS con datos iniciales -->
-  </div>
-
-  <template id="projectCardTemplate">
-    <article class="card project-card">
-      <div class="card-body">
-        <h3 class="project-title"></h3>
-        <p class="project-desc"></p>
-        <div class="tags"></div>
-      </div>
-      <div class="card-footer">
-        <a class="btn small" data-role="live" href="#" target="_blank" rel="noopener">Demo</a>
-        <a class="btn small ghost" data-role="repo" href="#" target="_blank" rel="noopener">Código</a>
-      </div>
-    </article>
-  </template>
-</section>
-
-<section id="blog" class="section container">
-  <h2>Blog</h2>
-  <p>Espacio para documentar aprendizajes y notas de ciberseguridad. Próximamente.</p>
-</section>
-
-<section id="contact" class="section container">
-    <div class="card info-card">
-        <h3>¿Estás realmente protegid@?</h3>
-        <p class="muted">
-          Esta es una demostración educativa. Uso únicamente información pública que tu navegador y conexión envían
-          al visitar esta página.
-          No guardaré tus datos 🛡️.
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-content">
+        <span class="chip">SysAdmin & Cybersecurity Student</span>
+        <h1>Impulsando la <span class="accent">Seguridad</span> y la Disponibilidad IT</h1>
+        <p class="lead">
+          Técnico de IT en <strong>Antfor Software</strong>. Especializándome en administración de sistemas (ASIR) con enfoque en Ciberseguridad Defensiva.
         </p>
-        <button id="checkSecurityBtn" class="btn small primary">Mostrar mi información</button>
-        <pre id="securityOutput" class="scan-output" aria-live="polite"></pre>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://www.linkedin.com/in/alejandroalbeagall%C3%A9n/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost" href="https://github.com/AlejandroAlbea" target="_blank" rel="noopener">GitHub</a>
+        </div>
       </div>
-    </div>
-</section>
+      <div class="hero-aside">
+        <img src="avatar.png" alt="Alejandro Albea" class="avatar">
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-head">
+        <h2>Sobre mí</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Mi enfoque profesional se centra en la creación y mantenimiento de infraestructuras tecnológicas robustas, escalables y, sobre todo, seguras. Como SysAdmin, entiendo que la disponibilidad y la integridad de los datos son los pilares de cualquier organización moderna.
+          </p>
+          <p>
+            Actualmente dedico gran parte de mi tiempo a aprender a fondo sobre <strong>Hardening de sistemas</strong>, la gestión de redes críticas y el despliegue de entornos virtualizados bajo altos estándares de seguridad.
+          </p>
+        </div>
+        <div class="tech-stack">
+          <h3>Stack Tecnológico</h3>
+          <div class="chips">
+            <span class="chip">Azure</span> <span class="chip">Azure</span>
+            <span class="chip">Linux</span> <span class="chip">Python</span>
+            <span class="chip">Proxmox</span> <span class="chip">Docker</span>
+            <span class="chip">Firewalls</span> <span class="chip">Windows Server</span>
+            <span class="chip">Monitorización</span> <span class="chip">Redes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section container">
+      <h2>Experiencia Profesional</h2>
+      <div class="timeline">
+        <div class="item">
+          <div class="dot"></div>
+          <div class="content">
+            <h3>Antfor Software · Técnico de IT</h3>
+            <p class="meta">2024 - Presente</p>
+            <p>
+                Trabajo en el mantenimiento y optimización de nuestras plataformas, asegurando que los entornos de Proxmox y la nube de Azure estén siempre actualizados y disponibles. Me dedico a fortalecer la operativa diaria mediante procesos técnicos estandarizados y una gestión de datos segura.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section container">
+        <h2>Formación Académica</h2>
+        <div class="timeline">
+          <div class="item">
+            <div class="dot"></div>
+            <div class="content">
+              <h3>iFP · ASIR con perfil de Ciberseguridad</h3>
+              <p class="meta">2025 - Actualidad</p>
+              <p>Especialización avanzada en administración de sistemas, gestión de redes corporativas y fundamentos de Blue Team para la defensa de activos digitales.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="dot"></div>
+            <div class="content">
+              <h3>SJO · Grado Medio SMR (Sistemas Microinformáticos y Redes)</h3>
+              <p class="meta">2023 - 2025</p>
+              <p>Formación en modalidad DUAL centrada en el montaje de equipos, configuración de redes de área local y administración básica de sistemas operativos.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
     <div class="container fine">
-      <span>2025 · Alejandro Albea</span>
-      <span>•</span>
-      <span>Palma, Islas Baleares</span>
+      <p>&copy; 2026 Alejandro Albea · Palma, Islas Baleares</p>
     </div>
   </footer>
 </body>
 </html>
-
-
